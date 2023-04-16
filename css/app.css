@@ -1,0 +1,86 @@
+body {
+	background-color: #1d1d1d;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	text-align: center;
+}
+
+.header {
+	background-color: teal;
+	color: white;
+    margin: 0;
+}
+
+p.header {
+    margin-bottom: 2rem;
+}
+
+.random-film {
+	padding: 10px;
+	border: 2px solid #4caf50;
+}
+
+label {
+	color: white;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#card {
+	padding: 1rem;
+	margin: 1rem auto;
+	border-radius: 2rem;
+	width: 95vw;
+	height: 60vh;
+	background-color: #363535;
+	color: white;
+	display: flex;
+}
+
+#card img {
+	max-width: 40%;
+	height: 85%;
+	margin: auto 0 auto 6rem;
+}
+
+#card-content {
+	max-width: 77%;
+	height: 100%;
+	text-align: center;
+	margin: auto 30% 0;
+	display: inline;
+	position: absolute;
+	right: 0;
+}
+
+#card-content h3 {
+	font-size: 1.5rem;
+	text-decoration: underline;
+	width: 100%;
+	inline-size: max-content;
+}
+
+#card-content p {
+	font-size: 1.2rem;
+	margin: 0 0 2rem;
+	width: 100%;
+	inline-size: max-content;
+}
+
+#amiibo-index {
+	padding-top: 4rem;
+}
+
+#previous, #next {
+    margin: 1rem;
+    border: none;
+    padding: 0.8rem 0.5rem;
+    font-size: 1.1rem;
+    border-radius: 1.3rem;
+    background-color: teal;
+    color: white;
+    font-weight: bold;
+}
