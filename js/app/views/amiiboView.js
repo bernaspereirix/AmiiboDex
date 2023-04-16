@@ -11,17 +11,12 @@ const buildCard = (amiibo, amiiboIndex) => {
                     <h3>Character: </h3>
                     <p>${amiibo.character}</p>
                     <h3>Release date: </h3> 
-                    <p>${
-											amiibo.release.eu ||
-											amiibo.release.na ||
-											amiibo.release.jp
-										}
-                    </p>
+                    <p>${amiibo.release.eu || amiibo.release.na || amiibo.release.jp}</p>
                     <h3>Game: </h3>
                     <p>${amiibo.amiiboSeries}</p>
                     <p id="amiibo-index">Amiibo ${amiiboIndex} of 837</p>
                 </div>
-            </div>`;
+            </div>`
 };
 
 const renderCard = (amiibo, amiiboIndex) => {
@@ -39,7 +34,11 @@ const renderSearch = () => {
 	}
 
 	elements.search = $(
-		"<form id='amiiboSearch'><label for='amiiboSearch'>Enter an index (from 1 to 837) to search:<input type='search' id='amiiboSearchInput' name='amiiboSearchInput'><input type='submit'></form>"
+		`<form id="amiiboSearch">
+		<label for="amiiboSearch">Enter an index (from 1 to 837) to search:
+		<input type="search" id="amiiboSearchInput" name="amiiboSearchInput">
+		<input type="submit">
+		</form>`
 	);
 	elements.search.submit((event) => {
 		amiiboController.formHandler($("#amiiboSearchInput").val());
